@@ -50,16 +50,17 @@ class ActiviteController extends Controller
 
     public function update(Request $request, Activite $activite)
     {
-        $request->validate([
+        $validatedData=$request->validate([
             'titre' => 'required',
             'description' => 'required',
             'club_id' => 'required',
         ]);
-        Activite::create([
-            'titre' => $request->titre,
-            'description' => $request->description,
-            'club_id' => $request->club_id
-        ]);
+        $activite->update($validatedData);
+        // Activite::update([
+        //     'titre' => $request->titre,
+        //     'description' => $request->description,
+        //     'club_id' => $request->club_id
+        // ]);
         
 
         return redirect()->route('activites.index')

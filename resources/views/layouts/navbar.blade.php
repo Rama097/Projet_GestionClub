@@ -7,7 +7,7 @@
             <a href="index.html">Menu</a>                
         </div>
         
-        <div class="navbar-right">
+        {{-- <div class="navbar-right">
             <form id="navbar-search" class="navbar-form search-form">
                 <input value="" class="form-control" placeholder="Rechercher ici..." type="text">
                 <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
@@ -79,10 +79,10 @@
                     </li>
                     <li>
                         <a href="page-login.html" class="icon-menu"><i class="fa fa-power-off"></i></a>
-                    </li>
+                    </li> 
                 </ul>
             </div>
-        </div>
+        </div>--}}
     </div>
 </nav>
 

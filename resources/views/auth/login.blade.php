@@ -9,7 +9,7 @@
             </div>
             <div class="card">
                 <div class="header">
-                    <p class="lead">Login to your account</p>
+                    <p class="lead">Connectez vous à votre compte</p>
                 </div>
                 <div class="body">
                     <form method="POST" action="{{ route('login') }}" class="form-auth-small" action="index.html">
@@ -25,7 +25,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="signin-password" class="control-label sr-only">Password</label>
+                            <label for="signin-password" class="control-label sr-only">Mot de passe</label>
                             <input type="password" class="form-control  @error('password') is-invalid @enderror" id="signin-password" name="password" required autocomplete="current-password">
 
                             @error('password')
@@ -34,10 +34,8 @@
                                 </span>
                             @enderror
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
-                        <div class="bottom">
-                            <span>Don't have an account? <a href="page-register.html">Register</a></span>
-                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Connexion</button>
+                       
                     </form>
                 </div>
             </div>

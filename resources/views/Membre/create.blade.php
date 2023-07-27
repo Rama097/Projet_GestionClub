@@ -70,23 +70,10 @@
                         <div class="body">
                             <div class="table-responsive">
                                 <table class="table table-bordered table-striped table-hover table-custom js-basic-example dataTable">
-                                    <thead>
-                                        <tr>
-                                            <th>Id</th>
-                                            <th>Nom</th>
-                                            <th>Description</th>
-                                            
-                                        </tr>
-                                    </thead>                            
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>MBA</td>
-                                            <td>info@gamil.com</td>
+                                    
 
-                                        </tr>
 
-                                    </tbody>
+                                    <p>Veuillez cliquer sur "Ajouter membre" pour ajouter un membre</p>
                                 </table>
                             </div>
                         </div>
@@ -139,47 +126,6 @@
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                     </div>
                 </form>
-
-              {{--   <div class="modal-body">
-                    <h6> Information Membre</h6>
-                    <div class="row clearfix">
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <input type="text" name="nom" id="nom" class="form-control" placeholder="Nom">
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
-                            </div>
-                        </div>
-                       
-                        <div class="col-lg-4 col-md-6 col-sm-12">                                
-                            <select name="club_id" class="form-control show-tick">
-                                <option selected>-- Club --</option>
-                                @foreach ($clubs as $club)
-                                 <option value="{{$club->id}}">{{$club->nom}}</option>
-                                @endforeach
-                                
-                            </select>
-                        </div>--}}
-
-                    </div>
-                     
-                    {{-- <div class="row clearfix"> 
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Phone">
-                            </div>
-                        </div>
-                    </div>--}}
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary">Ajouter</button>

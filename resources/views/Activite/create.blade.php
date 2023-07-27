@@ -70,23 +70,8 @@
                         <div class="body">
                             <div class="table-responsive">
                                 <table class="table table-bordered table-striped table-hover table-custom js-basic-example dataTable">
-                                    <thead>
-                                        <tr>
-                                            <th>Id</th>
-                                            <th>Nom</th>
-                                            <th>Description</th>
-                                            
-                                        </tr>
-                                    </thead>                            
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>MBA</td>
-                                            <td>info@gamil.com</td>
-
-                                        </tr>
-
-                                    </tbody>
+                                    
+                                    <p>Veuillez cliquer sur "Ajouter membre" pour ajouter un membre</p>
                                 </table>
                             </div>
                         </div>

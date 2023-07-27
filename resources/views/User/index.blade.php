@@ -21,7 +21,7 @@
                                 <tr>
                                     <th>Nom</th>
                                     <th>Email</th>
-                                    <th>Password</th>
+                                    <th>MOT DE PASSE</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>

@@ -4,6 +4,7 @@
 use App\Http\Controllers\ClubController;
 use App\Http\Controllers\MembreController;
 use App\Http\Controllers\ActiviteController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Models\Activite;
 use App\Models\Club;
@@ -26,11 +27,14 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 //Route Home
-Route::get('/', function() {
-    return view('layouts.app');
-});
+// Route::get('/', function() {
+//     return view('welcome');
+// });
+
+Route::get('logout', [HomeController::class, 'logout'])->name('logout');
 
 Route::group(['middleware' => ['auth']], function() {
+    Route::get('/', [HomeController::class, 'index']);
     Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
     Route::get('/users/index', [UserController::class, 'index'])->name('users.index');
     Route::get('/users/edit/{id}', [UserController::class, 'edit'])->name('users.edit');

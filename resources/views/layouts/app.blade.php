@@ -29,7 +29,9 @@
         </div>
     </div>
 
-   @auth
+
+    {{-- Condition qui permet de se connecter avant d'acceder au left bar, navbar et rightbar --}}
+   @auth      
     @include('layouts.navbar')  
         
     @include('layouts.leftbar')
